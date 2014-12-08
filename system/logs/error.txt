@@ -1,0 +1,377 @@
+2014-06-10 12:49:33 - PHP Notice:  Undefined index: order_product_id in /var/www/hipno/data/www/test.com/drum/admin/view/template/sale/order_form.tpl on line 230
+2014-06-10 23:09:58 - PHP Notice:  Undefined index: order_product_id in /var/www/hipno/data/www/test.com/drum/admin/view/template/sale/order_form.tpl on line 230
+2014-06-11 20:34:10 - PHP Notice:  Undefined index: value in /var/www/hipno/data/www/test.com/drum/catalog/model/checkout/order.php on line 23
+2014-06-11 20:34:10 - PHP Notice:  Undefined index: sort_order in /var/www/hipno/data/www/test.com/drum/catalog/model/checkout/order.php on line 23
+2014-06-12 0:47:01 - PHP Notice:  Undefined index: order_product_id in /var/www/hipno/data/www/test.com/drum/admin/view/template/sale/order_form.tpl on line 230
+2014-06-12 11:43:03 - PHP Notice:  Undefined index: order_product_id in /var/www/hipno/data/www/test.com/drum/admin/view/template/sale/order_form.tpl on line 230
+2014-06-12 11:43:03 - PHP Notice:  Undefined index: order_product_id in /var/www/hipno/data/www/test.com/drum/admin/view/template/sale/order_form.tpl on line 230
+2014-06-12 11:43:03 - PHP Notice:  Undefined index: order_product_id in /var/www/hipno/data/www/test.com/drum/admin/view/template/sale/order_form.tpl on line 230
+2014-06-12 11:43:03 - PHP Notice:  Undefined index: order_product_id in /var/www/hipno/data/www/test.com/drum/admin/view/template/sale/order_form.tpl on line 230
+2014-06-13 0:54:23 - PHP Notice:  Undefined index: value in /var/www/hipno/data/www/test.com/drum/catalog/model/checkout/order.php on line 23
+2014-06-13 0:54:23 - PHP Notice:  Undefined index: sort_order in /var/www/hipno/data/www/test.com/drum/catalog/model/checkout/order.php on line 23
+2014-06-13 2:07:11 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 115
+2014-06-13 2:07:51 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 115
+2014-06-13 2:17:04 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 115
+2014-06-13 2:20:15 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 115
+2014-06-13 2:20:24 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 476
+2014-06-13 2:20:26 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 476
+2014-06-13 2:20:29 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 476
+2014-06-13 2:20:30 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 476
+2014-06-13 2:20:33 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 476
+2014-06-13 2:20:34 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 476
+2014-06-13 2:20:40 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 115
+2014-06-13 2:20:56 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 476
+2014-06-13 2:20:57 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 476
+2014-06-13 2:20:58 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 476
+2014-06-13 2:20:59 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 476
+2014-06-13 2:21:00 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 476
+2014-06-13 2:21:01 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 476
+2014-06-13 2:21:02 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 476
+2014-06-13 2:21:03 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 476
+2014-06-13 2:21:05 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 476
+2014-06-13 2:21:06 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 476
+2014-06-13 2:21:09 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 476
+2014-06-13 2:21:11 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 476
+2014-06-13 2:21:12 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 476
+2014-06-13 2:21:16 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 115
+2014-06-13 2:25:23 - PHP Notice:  Undefined variable: tot in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/checkout/cart.tpl on line 81
+2014-06-13 2:25:23 - PHP Notice:  Undefined variable: tot in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/checkout/cart.tpl on line 81
+2014-06-13 2:41:26 - PHP Notice:  Undefined variable: sub in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 228
+2014-06-13 2:42:24 - PHP Notice:  Undefined variable: totals_data in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 228
+2014-06-13 2:42:24 - PHP Notice:  Undefined variable: sub in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 230
+2014-06-13 2:42:51 - PHP Notice:  Undefined variable: sub in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 228
+2014-06-13 2:42:51 - PHP Notice:  Undefined variable: sub in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 230
+2014-06-13 2:43:26 - PHP Notice:  Undefined variable: sub in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 229
+2014-06-13 2:43:26 - PHP Notice:  Undefined variable: sub in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 231
+2014-06-13 2:44:52 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 236
+2014-06-13 2:45:59 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 115
+2014-06-13 2:48:36 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 2:49:17 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 2:49:27 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 490
+2014-06-13 2:49:29 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 490
+2014-06-13 2:49:30 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 490
+2014-06-13 2:49:31 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 490
+2014-06-13 2:49:32 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 490
+2014-06-13 2:49:33 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 490
+2014-06-13 2:49:34 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 490
+2014-06-13 2:49:36 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 490
+2014-06-13 2:49:38 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 490
+2014-06-13 2:49:42 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 2:49:51 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 490
+2014-06-13 2:49:55 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 236
+2014-06-13 2:50:35 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 11:11:13 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 11:12:10 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-06-13 11:12:10 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-06-13 11:12:20 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 11:12:53 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 11:13:09 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 11:13:18 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-06-13 11:23:32 - PHP Notice:  Undefined index: order_product_id in /var/www/hipno/data/www/test.com/drum/admin/view/template/sale/order_form.tpl on line 230
+2014-06-13 11:27:49 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 11:28:00 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-06-13 11:28:05 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-06-13 11:34:05 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 11:59:19 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 11:59:30 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 12:05:33 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-06-13 12:20:23 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 12:21:39 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 12:21:50 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-06-13 12:21:51 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 233
+2014-06-13 13:40:03 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 13:40:18 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-06-13 13:42:30 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 13:42:46 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-06-13 13:42:50 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 13:44:37 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 233
+2014-06-13 13:45:48 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 13:47:42 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-06-13 13:49:16 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 13:49:50 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-06-13 15:00:39 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 15:49:54 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-13 15:53:12 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-14 0:18:09 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-14 0:18:20 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-06-14 0:18:22 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-06-14 0:18:23 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-06-14 1:50:52 - PHP Notice:  Undefined variable: flat_new_cost in /var/www/hipno/data/www/test.com/drum/admin/view/template/shipping/flat_new.tpl on line 21
+2014-06-14 1:50:52 - PHP Notice:  Undefined variable: flat_new_tax_class_id in /var/www/hipno/data/www/test.com/drum/admin/view/template/shipping/flat_new.tpl on line 28
+2014-06-14 1:50:52 - PHP Notice:  Undefined variable: flat_new_geo_zone_id in /var/www/hipno/data/www/test.com/drum/admin/view/template/shipping/flat_new.tpl on line 41
+2014-06-14 1:50:52 - PHP Notice:  Undefined variable: flat_new_status in /var/www/hipno/data/www/test.com/drum/admin/view/template/shipping/flat_new.tpl on line 52
+2014-06-14 1:50:52 - PHP Notice:  Undefined variable: flat_new_sort_order in /var/www/hipno/data/www/test.com/drum/admin/view/template/shipping/flat_new.tpl on line 63
+2014-06-14 1:53:34 - PHP Notice:  Undefined variable: flat_new_cost in /var/www/hipno/data/www/test.com/drum/admin/view/template/shipping/flat_new.tpl on line 21
+2014-06-14 1:53:34 - PHP Notice:  Undefined variable: flat_new_tax_class_id in /var/www/hipno/data/www/test.com/drum/admin/view/template/shipping/flat_new.tpl on line 28
+2014-06-14 1:53:34 - PHP Notice:  Undefined variable: flat_new_geo_zone_id in /var/www/hipno/data/www/test.com/drum/admin/view/template/shipping/flat_new.tpl on line 41
+2014-06-14 1:53:34 - PHP Notice:  Undefined variable: flat_new_status in /var/www/hipno/data/www/test.com/drum/admin/view/template/shipping/flat_new.tpl on line 52
+2014-06-14 1:53:34 - PHP Notice:  Undefined variable: flat_new_sort_order in /var/www/hipno/data/www/test.com/drum/admin/view/template/shipping/flat_new.tpl on line 63
+2014-06-14 1:53:52 - PHP Notice:  Undefined variable: flat_new_cost in /var/www/hipno/data/www/test.com/drum/admin/view/template/shipping/flat_new.tpl on line 21
+2014-06-14 1:53:52 - PHP Notice:  Undefined variable: flat_new_tax_class_id in /var/www/hipno/data/www/test.com/drum/admin/view/template/shipping/flat_new.tpl on line 28
+2014-06-14 1:53:52 - PHP Notice:  Undefined variable: flat_new_geo_zone_id in /var/www/hipno/data/www/test.com/drum/admin/view/template/shipping/flat_new.tpl on line 41
+2014-06-14 1:53:52 - PHP Notice:  Undefined variable: flat_new_status in /var/www/hipno/data/www/test.com/drum/admin/view/template/shipping/flat_new.tpl on line 52
+2014-06-14 1:53:52 - PHP Notice:  Undefined variable: flat_new_sort_order in /var/www/hipno/data/www/test.com/drum/admin/view/template/shipping/flat_new.tpl on line 63
+2014-06-15 14:06:06 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-15 14:06:22 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-06-15 14:06:24 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-06-15 14:12:50 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-15 14:13:22 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-15 14:13:34 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-15 14:14:10 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-15 14:14:37 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-16 10:40:30 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-16 11:57:28 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-06-16 11:57:57 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-17 9:29:37 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-18 0:11:33 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-06-18 0:11:44 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-06-18 0:49:43 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 15:28:04 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 15:55:37 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 15:56:19 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 15:57:04 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 15:57:23 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 15:59:36 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:00:22 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:00:30 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:00:38 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:00:45 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:00:52 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:01:01 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:01:08 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:01:16 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:01:23 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:01:30 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:01:38 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:01:46 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:01:52 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:12:29 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:20:03 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:22:14 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:23:07 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:23:28 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:23:46 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:24:09 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:24:25 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:24:31 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:31:29 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-09 16:31:57 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-10 2:40:02 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-10 20:57:26 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-11 12:53:37 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-11 12:54:05 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 19:02:54 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 19:07:44 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-11-17 19:21:57 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 19:22:08 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-11-17 19:27:40 - PHP Notice:  Undefined index: order_product_id in /var/www/hipno/data/www/test.com/drum/admin/view/template/sale/order_form.tpl on line 230
+2014-11-17 20:05:17 - PHP Notice:  Undefined index: order_product_id in /var/www/hipno/data/www/test.com/drum/admin/view/template/sale/order_form.tpl on line 230
+2014-11-17 20:08:02 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 20:08:14 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-11-17 20:09:19 - PHP Notice:  Undefined index: order_product_id in /var/www/hipno/data/www/test.com/drum/admin/view/template/sale/order_form.tpl on line 230
+2014-11-17 20:17:03 - PHP Notice:  Undefined index: order_product_id in /var/www/hipno/data/www/test.com/drum/admin/view/template/sale/order_form.tpl on line 230
+2014-11-17 20:17:25 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 20:17:38 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-11-17 20:19:11 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 20:19:23 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-11-17 21:54:50 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 21:55:05 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/checkout/cart.php on line 487
+2014-11-17 23:00:20 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 23:04:56 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 23:38:50 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 23:39:07 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 23:39:20 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 23:40:14 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 23:40:32 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 23:48:42 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 23:49:25 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 23:54:07 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 23:54:13 - PHP Notice:  Undefined variable: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-17 23:54:13 - PHP Notice:  Undefined variable: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-17 23:54:13 - PHP Notice:  Undefined variable: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-17 23:54:13 - PHP Notice:  Undefined variable: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-17 23:54:13 - PHP Notice:  Undefined variable: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-17 23:54:13 - PHP Notice:  Undefined variable: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-17 23:54:13 - PHP Notice:  Undefined variable: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-17 23:54:13 - PHP Notice:  Undefined variable: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-17 23:55:13 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 23:56:25 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 23:57:38 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 23:58:26 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 23:59:07 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 23:59:20 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 23:59:40 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-17 23:59:58 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-18 0:01:47 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-18 0:05:07 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-18 0:05:42 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-18 0:07:46 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-18 0:31:45 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-18 0:32:05 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-18 19:24:10 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-18 19:32:10 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-18 19:33:57 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-18 20:11:48 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-18 20:12:00 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-18 20:13:13 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-18 20:13:28 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-18 20:14:16 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-18 20:14:56 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-18 20:15:10 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-18 20:16:19 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-18 20:16:40 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-18 20:17:10 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-18 20:17:38 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-20 3:28:07 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-20 3:47:00 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-20 14:42:50 - PHP Notice:  Undefined variable: thumb in /var/www/hipno/data/www/test.com/drum/admin/view/template/catalog/product_form.tpl on line 153
+2014-11-20 14:42:50 - PHP Notice:  Undefined variable: text_browse in /var/www/hipno/data/www/test.com/drum/admin/view/template/catalog/product_form.tpl on line 155
+2014-11-20 14:42:50 - PHP Notice:  Undefined variable: text_clear in /var/www/hipno/data/www/test.com/drum/admin/view/template/catalog/product_form.tpl on line 155
+2014-11-20 14:42:50 - PHP Notice:  Undefined variable: text_browse in /var/www/hipno/data/www/test.com/drum/admin/view/template/catalog/product_form.tpl on line 1076
+2014-11-20 14:42:50 - PHP Notice:  Undefined variable: text_clear in /var/www/hipno/data/www/test.com/drum/admin/view/template/catalog/product_form.tpl on line 1076
+2014-11-20 14:44:15 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-20 14:52:37 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-20 14:52:48 - PHP Notice:  Undefined index: meta_Title in /var/www/hipno/data/www/test.com/drum/vqmod/vqcache/vq2-catalog_controller_product_category.php on line 78
+2014-11-20 14:57:13 - PHP Notice:  Undefined index: meta_Title in /var/www/hipno/data/www/test.com/drum/vqmod/vqcache/vq2-catalog_controller_product_category.php on line 78
+2014-11-20 14:57:15 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-20 14:57:19 - PHP Notice:  Undefined variable: column_center in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 18
+2014-11-20 14:57:19 - PHP Notice:  Undefined variable: begin_description in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 23
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 14:57:19 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 14:57:27 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-20 14:57:32 - PHP Notice:  Undefined variable: column_center in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 18
+2014-11-20 14:57:32 - PHP Notice:  Undefined variable: begin_description in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 23
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 14:57:32 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 14:57:34 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-20 14:59:08 - PHP Notice:  Undefined index: seo_title in /var/www/hipno/data/www/test.com/drum/vqmod/vqcache/vq2-catalog_controller_product_product.php on line 131
+2014-11-20 14:59:08 - PHP Notice:  Undefined index: seo_h1 in /var/www/hipno/data/www/test.com/drum/vqmod/vqcache/vq2-catalog_controller_product_product.php on line 145
+2014-11-20 14:59:10 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-20 15:01:40 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-20 15:01:44 - PHP Notice:  Undefined variable: column_center in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 18
+2014-11-20 15:01:44 - PHP Notice:  Undefined variable: begin_description in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 23
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:01:44 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:01:46 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-20 15:04:34 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-20 15:04:39 - PHP Notice:  Undefined variable: column_center in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 18
+2014-11-20 15:04:39 - PHP Notice:  Undefined variable: begin_description in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 23
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:04:39 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:04:41 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-20 15:06:32 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116
+2014-11-20 15:06:37 - PHP Notice:  Undefined variable: column_center in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 18
+2014-11-20 15:06:37 - PHP Notice:  Undefined variable: begin_description in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 23
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: status_hit in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 56
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: status_new in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 59
+2014-11-20 15:06:37 - PHP Notice:  Undefined index: stock in /var/www/hipno/data/www/test.com/drum/catalog/view/theme/default/template/product/category.tpl on line 85
+2014-11-20 15:06:39 - PHP Warning:  array_multisort(): Array sizes are inconsistent in /var/www/hipno/data/www/test.com/drum/catalog/controller/module/cart.php on line 116

@@ -1,0 +1,4 @@
+.t-nav, .b-video-r, .soc, .nav, .sh-line, .b-item-catalog_img, .nav p:first-child a, .b-item-catalog_img10, .b-item-catalog_drop_bg, .b-item-catalog_drop, .recomend, .item-big_tobasket, .recomend-title, .b-comment, .recomend-body, .basket-body, .basket, .basket-title, .tab-nav li, .tab-body, .tab-body .tab-body-title, .search-in, .search-title, .search-body, .b-tabs2 .tab-nav2 li, .b-item, .item-bot {behavior: url(PIE.htc);}
+.soc li, .b-item, .b-img-video, .b-item-catalog {//display:inline; //zoom:1;}
+.sidebar-menu li, .main-txt-more a, .nav p,.basket-links, .contact-other li, .tab-body-date, .recomend-body_item, .add-comment_line, .item-big, .view-all-sp a {zoom:1;}
+.wrapper, .footer{width:expression((document.documentElement.clientWidth || document.body.clientWidth) < 1000? "1000px" : "100%");}

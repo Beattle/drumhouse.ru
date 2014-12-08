@@ -1,0 +1,34 @@
+--- PAGE URL: index.php ---
+
+[/usr/home/william/domains/time2you.ru/public_html/dh/admin/index.php]
+Query Time: 0.0009 :: SELECT * FROM oc_setting WHERE store_id = '0'
+Aggregate: 0.0009
+
+[/usr/home/william/domains/time2you.ru/public_html/dh/admin/index.php]
+Query Time: 0.0001 :: SELECT * FROM oc_language
+Aggregate: 0.001
+
+[/usr/home/william/domains/time2you.ru/public_html/dh/system/library/currency.php]
+Query Time: 0.0001 :: SELECT * FROM oc_currency
+Aggregate: 0.0011
+
+[/usr/home/william/domains/time2you.ru/public_html/dh/system/library/weight.php]
+Query Time: 0.0001 :: SELECT * FROM oc_weight_class wc LEFT JOIN oc_weight_class_description wcd ON (wc.weight_class_id = wcd.weight_class_id) WHERE wcd.language_id = '1'
+Aggregate: 0.0012
+
+[/usr/home/william/domains/time2you.ru/public_html/dh/system/library/length.php]
+Query Time: 0.0001 :: SELECT * FROM oc_length_class mc LEFT JOIN oc_length_class_description mcd ON (mc.length_class_id = mcd.length_class_id) WHERE mcd.language_id = '1'
+Aggregate: 0.0013
+
+[/usr/home/william/domains/time2you.ru/public_html/dh/system/library/user.php]
+Query Time: 0.0005 :: SELECT * FROM oc_user WHERE user_id = '1' AND status = '1'
+Aggregate: 0.0018
+
+[/usr/home/william/domains/time2you.ru/public_html/dh/system/library/user.php]
+Query Time: 0.0002 :: UPDATE oc_user SET ip = '89.221.51.218' WHERE user_id = '1'
+Aggregate: 0.002
+
+[/usr/home/william/domains/time2you.ru/public_html/dh/system/library/user.php]
+Query Time: 0.0001 :: SELECT permission FROM oc_user_group WHERE user_group_id = '1'
+Aggregate: 0.0021
+

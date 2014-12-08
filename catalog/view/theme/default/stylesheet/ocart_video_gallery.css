@@ -1,0 +1,32 @@
+.ocart_video_box {
+	width:25%; 
+	float:left; 
+	height:140px; 
+	text-align:center; 
+	padding:10px 0; 
+	margin-bottom:5px;
+}
+.ocart_video_box a{
+	text-decoration:none;
+}
+.ocart_video {
+	width:176px;
+	height:100px;
+	position:relative;
+	margin:auto;
+}
+.ocart_video .btn-play{
+	position:absolute;
+	top:25px;
+	left:60px;
+	cursor:pointer;
+}
+
+.ocart_video_show {
+	width:100%;
+	text-align:center;
+	margin-bottom:10px;
+}
+.ocart_video_show iframe{
+	border:1px solid #d1d1d1;
+}

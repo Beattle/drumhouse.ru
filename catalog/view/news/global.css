@@ -1,0 +1,172 @@
+/*category news*/
+.stars{
+	height:12px !important;
+	display:block;
+	float:left;
+	margin-right:10px;
+}
+.stars a
+{
+	display:inline;
+	text-decoration:none;
+}
+.stars a.sta {
+    background: url("image/star.png") repeat scroll 0 0 transparent;
+}
+.stars a.gry {
+    background: url("image/star.png") no-repeat scroll 0 -12px transparent;
+}
+.stars a.gry:hover {
+    background: url("image/star.png") no-repeat scroll 0 0 transparent;
+}
+img#loading
+{
+	background:none;	
+	margin:0;
+	padding:0;
+	width:10px;
+	height:10px;
+	display:inline;
+	border:none;
+}/*article category*/
+.article{
+	border-bottom: 1px solid #DDDDDD;
+    display: inline;
+    float: left;
+    padding: 10px;
+}
+.article .thumb{
+	float:left;
+	border:2px solid #ddd;
+	margin-right:10px;
+}
+.info{
+	padding:5px;
+}
+.info .startnone
+{
+	float:left;
+	margin-right:10px;
+}
+.info .creat-date,.info .vote,.info .views
+{
+	float:left;
+	font-size:10px;
+	font-weight:bold;
+	margin-right:10px;
+	color:#484848;
+}
+.more{
+	float:right;
+}
+.comment
+{
+	font-size:12px;
+	margin-right:20px;
+	text-decoration:none;
+}
+.readmore
+{
+	text-decoration:none;
+}
+.news-share {
+    float: right;
+    text-align: right;
+}
+#list-comment, #no-comment {
+    background: none repeat scroll 0 0 #F8F8F8;
+    border: 1px solid #DDDDDD;
+    margin-bottom: 10px;
+    overflow: hidden;
+    padding: 10px;
+}
+.tags {
+    padding: 10px;
+}
+#pagination {
+    text-align: right;
+}
+/* Gallery */
+ul.gallery
+{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+ul.gallery li{
+	float:left;
+	display:inline;
+	margin:5px;
+	padding:0;
+}
+ul.gallery li img{
+	display:block;
+	border:1px solid #ddd;
+	padding:2px;
+	background:#ddd;
+}
+.startnone a
+{
+	cursor:inherit;
+	text-decoration:none;
+}
+.startnone a.sta {
+    background: url("image/star.png") repeat scroll 0 0 transparent;
+}
+.startnone a.gry {
+    background: url("image/star.png") no-repeat scroll 0 -12px transparent;
+}
+.albumname
+{
+	font-weight:bold;
+	font-size:13px;
+	text-transform:capitalize;
+	line-height:20px;
+}
+.albumcount
+{
+	font-size:10px;
+	color:#707070;
+	float:left;
+	margin-right:20px;
+}
+.albumdate
+{
+	clear:left;
+	font-size:10px;
+	font-weight:bold;
+}
+/* Album */
+ul.albums{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+ul.albums li{
+	float:left;
+	display:inline;
+	margin:10px;
+	padding:0;
+}
+ul.albums li img{
+	display:block;
+	border:1px solid #ddd;
+	padding:2px;
+	background:#ddd;
+}.imagename
+{
+	font-weight:bold;
+	font-size:13px;
+	text-transform:capitalize;
+	line-height:20px;
+}
+.imagedate
+{
+	font-size:10px;
+	font-weight:bold;
+}
+.imagevote,.imageview{
+	float:left;
+	font-size:10px;
+	padding-left:10px;
+}

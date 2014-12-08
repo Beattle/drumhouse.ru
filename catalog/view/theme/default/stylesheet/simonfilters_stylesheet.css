@@ -1,0 +1,43 @@
+/*
+ * simonfilters - 2.12.0 Build 0001
+*/
+
+pre.small{
+    width:20px;
+    height:20px;
+    font-size: 0.0em;
+}
+
+
+#simonfilters_price_amount, .sfsamount{
+    padding-top: 5px;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #38B0E3;
+}
+
+.filter_group[filtertype='p'] .filter_title, .sfslider .filter_title{
+    left:6px !important;
+    border-bottom:0px !important;
+    margin-bottom: 3px;
+
+}
+
+/*
+* uncomment to style the price range & handles
+*/
+
+.ui-widget-header {
+    background: #FF0000 !important;
+}
+
+/*
+.ui-widget-header {
+    background: red !important;
+}
+.ui-slider .ui-slider-handle {
+    background:red !important;
+}
+*/

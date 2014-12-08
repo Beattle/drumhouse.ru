@@ -1,0 +1,10 @@
+<modification>
+        <id>1.0</id>
+        <author>Hipno</author>
+        <file name="admin/model/sale/order.php">
+				<operation>
+						<search position="replace"><![CDATA[$this->notifyUpdateOrder($order_id, $data);]]></search>
+                        <add><![CDATA[ // $this->notifyUpdateOrder($order_id, $data); ]]></add>
+				</operation>
+        </file>
+</modification>

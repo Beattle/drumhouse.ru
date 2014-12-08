@@ -1,0 +1,707 @@
+<modification>
+    <id>SimonFilters</id>
+    <version>simonfilters - 2.12.0 Build 0001</version>
+    <vqmver>2.1.1</vqmver>
+    <author>SimonOop http://www.simonoop.com</author>
+
+
+    <!--
+    ####################################################################################################
+    #
+    # catalog/controller/product/search.php
+    #
+    ####################################################################################################
+    -->
+    <file name="catalog/controller/product/search.php">
+        <operation>
+            <search position="after"><![CDATA[public function index() { ]]></search>
+            <add><![CDATA[
+
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                * operation #1: add empty search string fix to search method
+                */
+                if( isset($_GET['checkedfilters']) ){
+                    if(!isset($this->request->get['search']))$this->request->get['search']='';
+                }
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code END
+                */
+            ]]>
+            </add>
+        </operation>
+    </file>
+
+    <!--
+    ####################################################################################################
+    #
+    # catalog/model/catalog/product.php
+    #
+    ####################################################################################################
+    -->
+    <file name="catalog/model/catalog/product.php">
+        <operation>
+            <search position="after"><![CDATA[public function getProducts($data = array()) {]]></search>
+            <add><![CDATA[
+
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                * operation #2: add model and cache modifier to getProducts
+                */
+                    $this->load->model('catalog/simonfilters');
+                    if( $this->model_catalog_simonfilters->isActive() ){
+                        $data['simonfilters']=$this->model_catalog_simonfilters->getSimonAttributesCacheData();
+                        $data['filter_sub_category'] = true;
+                    }
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code END
+                */
+            ]]>
+            </add>
+        </operation>
+
+        <operation>
+            <search position="after"><![CDATA[public function getTotalProducts($data = array()) {]]></search>
+            <add><![CDATA[
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                * operation #2a: add model and cache modifier to getProducts
+                */
+                    $this->load->model('catalog/simonfilters');
+                    if( $this->model_catalog_simonfilters->isActive() ){
+                        $data['simonfilters']=$this->model_catalog_simonfilters->getSimonAttributesCacheData();
+                        $data['filter_sub_category'] = true;
+                    }
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code END
+                */
+            ]]>
+            </add>
+        </operation>
+
+        <operation>
+            <search position="before"><![CDATA[$query = $this->db->query($sql);]]></search>
+            <add><![CDATA[
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                * operation #3: add model and query modifier to 'getTotalProducts','getProducts' and 'getProductSpecials'
+                */
+                    if(in_array(__FUNCTION__,array('getTotalProducts','getProducts','getProductSpecials'))){
+                        if(!in_array(__FUNCTION__,array('getProducts'))){
+                            $this->load->model('catalog/simonfilters');
+                        }
+
+                        if( $this->model_catalog_simonfilters->isActive() ){
+                            $SimonAttributes = $this->model_catalog_simonfilters->getSimonAttributes();
+                            $simonJoin = "";
+
+                            if(version_compare(VERSION, '1.5.1.2', '<=')) {
+                                $simonNthAri = array(
+                                        'getTotalProducts' => 1,
+                                        'getProducts' => 2,
+                                        'getProductSpecials' => 0
+                                );
+                                $simonnth = $simonNthAri[__FUNCTION__];
+                                if($simonnth>0){
+                                    $simon_replace= "\n#simonStart\n". $simonJoin." ".$SimonAttributes['options']."\n#simonEnd\n WHERE \n#simonStart\n". $SimonAttributes['default'] ."\n#simonEnd\n";
+                                    $sql = $this->model_catalog_simonfilters->replaceNth($simonnth,"WHERE",$simon_replace,$sql);
+                                }
+                            }else if(version_compare(VERSION, '1.5.5.1', '<')) {
+                                $simonJoin = (!preg_match('/product_special/',$sql))?" LEFT JOIN " . DB_PREFIX . "product_special ps ON (p.product_id = ps.product_id) ":"";
+                                $simon_replace= $simonJoin." ".$SimonAttributes['options']." WHERE ". $SimonAttributes['default'];
+
+                                $sql = substr_replace($sql, $simon_replace, strrpos($sql, "WHERE"), strlen("WHERE"));
+                            }else{
+                                $simonJoin = (__FUNCTION__!='getProductSpecials' && !preg_match('/LEFT JOIN.*product_special/',$sql))?" LEFT JOIN " . DB_PREFIX . "product_special ps ON (p.product_id = ps.product_id) ":"";
+                                $simon_replace= $simonJoin." ".$SimonAttributes['options']." WHERE ". $SimonAttributes['default'];
+
+                                $sql = substr_replace($sql, $simon_replace, strrpos($sql, "WHERE"), strlen("WHERE"));
+                            }
+
+                            $this->model_catalog_simonfilters->debug(__FILE__ . ';' . __LINE__, 'FINAL:', $sql);
+                        }
+                    }
+                    #if(in_array(__FUNCTION__,array('getProducts'))){echo __FUNCTION__."<br>".nl2br($sql)."<hr>";}
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code End
+                */
+            ]]>
+            </add>
+        </operation>
+
+    </file>
+
+    <!--
+    ####################################################################################################
+    #
+    # Changes to attributes
+    #
+    ####################################################################################################
+    -->
+
+    <file name="admin/controller/catalog/attribute.php">
+        <operation>
+            <search position="after"><![CDATA[function getForm() {]]>
+            </search>
+            <add><![CDATA[
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                */
+                $this->load->model('catalog/simonfilters');
+                $attr_id = isset($this->request->get['attribute_id'])?$this->request->get['attribute_id']:0;
+                $this->data['simonseesme'] = $this->model_catalog_simonfilters->isSupportedFilter('a',$attr_id)?1:null;
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code END
+                */
+                    ]]>
+            </add>
+        </operation>
+        <operation>
+            <search position="after"><![CDATA[$this->data['attributes'][] = array(]]>
+            </search>
+            <add><![CDATA[
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                */
+                'simonseesme'    => $result['simonseesme'],
+                'simonseesme_link' => $this->url->link('module/simonfilters/simonseesme', 'token=' . $this->session->data['token'] . '&attribute_id=' . $result['attribute_id'], 'SSL'),
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code END
+                */
+                    ]]>
+            </add>
+        </operation>
+
+    </file>
+    <file name="admin/view/template/catalog/attribute_form.tpl">
+        <operation>
+            <search position="after" offset="2"><![CDATA[<td><?php echo $entry_sort_order; ?></td>]]>
+            </search>
+            <add><![CDATA[
+                <!--
+                * simonfilters - 2.12.0 Build 0001 Code START
+                *-->
+                <tr>
+                    <td>Simon Filters sees this</td>
+                    <td><input type="checkbox" name="simonseesme" value="1" <?php if(isset($simonseesme)) echo "CHECKED"?> /></td>
+                </tr>
+                <!--
+                * simonfilters - 2.12.0 Build 0001 Code END
+                *-->
+                    ]]>
+            </add>
+        </operation>
+    </file>
+
+    <file name="admin/model/catalog/attribute.php">
+        <operation>
+            <search position="after" offset="4"><![CDATA[public function addAttribute($data) {]]>
+            </search>
+            <add><![CDATA[
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                */
+                $this->load->model('catalog/simonfilters');
+                $this->model_catalog_simonfilters->addSupportedFilter('a',$attribute_id,$data);
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code END
+                */
+            ]]>
+            </add>
+        </operation>
+        <operation>
+            <search position="after" offset="2"><![CDATA[public function editAttribute($attribute_id, $data) {]]>
+            </search>
+            <add><![CDATA[
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                */
+                $this->load->model('catalog/simonfilters');
+                $this->model_catalog_simonfilters->addSupportedFilter('a',$attribute_id,$data);
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code END
+                */
+            ]]>
+            </add>
+        </operation>
+        <operation>
+            <search position="after" index="1"><![CDATA[$query = $this->db->query($sql);]]>
+            </search>
+            <add><![CDATA[
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                */
+                $this->load->model('setting/setting');
+                $simonsupported = $this->model_setting_setting->getSetting('simonfilters_supported');
+                foreach($query->rows as $key => $row){
+                    if(isset($simonsupported['a'])){
+                        $row['simonseesme'] = key_exists($row['attribute_id'], $simonsupported['a']);
+                    }else{
+                        $row['simonseesme']=false;
+                    }
+                    $query->rows[$key]=$row;
+                }
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code END
+                */
+            ]]>
+            </add>
+        </operation>
+
+    </file>
+    <file name="admin/view/template/catalog/attribute_list.tpl">
+        <operation>
+            <search position="before"><![CDATA[<td class="right"><?php if ($sort == 'a.sort_order') { ?>]]>
+            </search>
+            <add><![CDATA[
+                <!--
+                * simonfilters - 2.12.0 Build 0001 Code START
+                *-->
+                <td class="right">SimonFilters</td>
+                <script>
+                $(function(){
+                    $("a.simonseesme").click(function(event){
+                       event.preventDefault();
+                       var $_this = $(this);
+                       data = {
+                            simonseesme : $_this.text().trim()=='Yes'?0:1
+                       };
+                       $.get($(this).attr("href"),data,function(data){
+                            $_this.text( $_this.text().trim()=='Yes'?'No':'Yes' );
+                       });
+                    });
+                });
+                </script>
+                <!--
+                * simonfilters - 2.12.0 Build 0001 Code END
+                *-->
+                    ]]>
+            </add>
+        </operation>
+        <operation>
+            <search position="after"><![CDATA[<td class="left"><?php echo $attribute['attribute_group']; ?></td>]]>
+            </search>
+            <add><![CDATA[
+                <!--
+                * simonfilters - 2.12.0 Build 0001 Code START
+                *-->
+                <td class="right">
+                <a href="<?php echo $attribute['simonseesme_link'];?>" class="simonseesme">
+                <?php echo $attribute['simonseesme']?'<font color="green">Yes</font>':'No'; ?>
+                </a>
+                </td>
+                <!--
+                * simonfilters - 2.12.0 Build 0001 Code END
+                *-->
+                    ]]>
+            </add>
+        </operation>
+    </file>
+
+    <!--
+    ####################################################################################################
+    #
+    # Changes to Options
+    #
+    ####################################################################################################
+    -->
+    <file name="admin/model/catalog/option.php">
+        <operation>
+            <search position="after" offset="4"><![CDATA[public function addOption($data) {]]>
+            </search>
+            <add><![CDATA[
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                */
+                $this->load->model('catalog/simonfilters');
+                $this->model_catalog_simonfilters->addSupportedFilter('o',$option_id,$data);
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code END
+                */
+            ]]>
+            </add>
+        </operation>
+        <operation>
+            <search position="after" offset="2"><![CDATA[public function editOption($option_id, $data) {]]>
+            </search>
+            <add><![CDATA[
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                */
+                $this->load->model('catalog/simonfilters');
+                $this->model_catalog_simonfilters->addSupportedFilter('o',$option_id,$data);
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code END
+                */
+            ]]>
+            </add>
+        </operation>
+        <operation>
+            <search position="after" index="1"><![CDATA[$query = $this->db->query($sql);]]>
+            </search>
+            <add><![CDATA[
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                */
+                $this->load->model('setting/setting');
+                $simonsupported = $this->model_setting_setting->getSetting('simonfilters_supported');
+                foreach($query->rows as $key => $row){
+                    if(isset($simonsupported['o'])){
+                        $row['simonseesme'] = key_exists($row['option_id'], $simonsupported['o']);
+                    }else{
+                        $row['simonseesme']=false;
+                    }
+                    $query->rows[$key]=$row;
+                }
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code END
+                */
+            ]]>
+            </add>
+        </operation>
+
+    </file>
+
+
+    <file name="admin/controller/catalog/option.php">
+        <operation>
+            <search position="after"><![CDATA[function getForm() {]]>
+            </search>
+            <add><![CDATA[
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                */
+                $this->load->model('catalog/simonfilters');
+                $option_id = isset($this->request->get['option_id'])?$this->request->get['option_id']:0;
+                $this->data['simonseesme'] = $this->model_catalog_simonfilters->isSupportedFilter('o',$option_id)?1:null;
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code END
+                */
+                    ]]>
+            </add>
+        </operation>
+        <operation>
+            <search position="after"><![CDATA[$this->data['options'][] = array(]]>
+            </search>
+            <add><![CDATA[
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                */
+                'simonseesme'    => $result['simonseesme'],
+                'simonseesme_link' => $this->url->link('module/simonfilters/simonseesme', 'token=' . $this->session->data['token'] . '&option_id=' . $result['option_id'], 'SSL'),
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code END
+                */
+                    ]]>
+            </add>
+        </operation>
+
+    </file>
+
+    <file name="admin/view/template/catalog/option_form.tpl">
+        <operation>
+            <search position="after" offset="2"><![CDATA[<td><?php echo $entry_sort_order; ?></td>]]>
+            </search>
+            <add><![CDATA[
+                <!--
+                * simonfilters - 2.12.0 Build 0001 Code START
+                *-->
+                <tr>
+                    <td>Simon Filters sees this</td>
+                    <td><input type="checkbox" name="simonseesme" value="1" <?php if(isset($simonseesme)) echo "CHECKED"?> /></td>
+                </tr>
+                <!--
+                * simonfilters - 2.12.0 Build 0001 Code END
+                *-->
+                    ]]>
+            </add>
+        </operation>
+    </file>
+
+    <file name="admin/view/template/catalog/option_list.tpl">
+        <operation>
+            <search position="before"><![CDATA[<td class="right"><?php if ($sort == 'o.sort_order') { ?>]]>
+            </search>
+            <add><![CDATA[
+                <!--
+                * simonfilters - 2.12.0 Build 0001 Code START
+                *-->
+                <td class="right">SimonFilters</td>
+                <script>
+                $(function(){
+                    $("a.simonseesme").click(function(event){
+                       event.preventDefault();
+                       var $_this = $(this);
+                       data = {
+                            simonseesme : $_this.text().trim()=='Yes'?0:1
+                       };
+                       $.get($(this).attr("href"),data,function(data){
+                            $_this.text( $_this.text().trim()=='Yes'?'No':'Yes' );
+                       });
+                    });
+                });
+                </script>
+                <!--
+                * simonfilters - 2.12.0 Build 0001 Code END
+                *-->
+                    ]]>
+            </add>
+        </operation>
+        <operation>
+            <search position="after"><![CDATA[<td class="left"><?php echo $option['name']; ?></td>]]>
+            </search>
+            <add><![CDATA[
+                <!--
+                * simonfilters - 2.12.0 Build 0001 Code START
+                *-->
+                <td class="right">
+                <a href="<?php echo $option['simonseesme_link'];?>" class="simonseesme">
+                <?php echo $option['simonseesme']?'<font color="green">Yes</font>':'No'; ?>
+                </a>
+                </td>
+                <!--
+                * simonfilters - 2.12.0 Build 0001 Code END
+                *-->
+                    ]]>
+            </add>
+        </operation>
+    </file>
+
+    <!--
+    ####################################################################################################
+    #
+    # Changes to Manufacturers
+    #
+    ####################################################################################################
+    -->
+    <file name="admin/model/catalog/manufacturer.php">
+        <operation>
+            <search position="after" offset="4"><![CDATA[public function addManufacturer($data) {]]>
+            </search>
+            <add><![CDATA[
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                */
+                $this->load->model('catalog/simonfilters');
+                $this->model_catalog_simonfilters->addSupportedFilter('m',$manufacturer_id,$data);
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code END
+                */
+            ]]>
+            </add>
+        </operation>
+        <operation>
+            <search position="after" offset="2"><![CDATA[public function editManufacturer($manufacturer_id, $data) {]]>
+            </search>
+            <add><![CDATA[
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                */
+                $this->load->model('catalog/simonfilters');
+                $this->model_catalog_simonfilters->addSupportedFilter('m',$manufacturer_id,$data);
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code END
+                */
+            ]]>
+            </add>
+        </operation>
+        <operation>
+            <search position="after" index="1"><![CDATA[$query = $this->db->query($sql);]]>
+            </search>
+            <add><![CDATA[
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                */
+                $this->load->model('setting/setting');
+                $simonsupported = $this->model_setting_setting->getSetting('simonfilters_supported');
+                foreach($query->rows as $key => $row){
+                    if(isset($simonsupported['m'])){
+                        $row['simonseesme'] = key_exists($row['manufacturer_id'], $simonsupported['m']);
+                    }else{
+                        $row['simonseesme']=false;
+                    }
+                    $query->rows[$key]=$row;
+                }
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code END
+                */
+            ]]>
+            </add>
+        </operation>
+
+    </file>
+
+    <file name="admin/controller/catalog/manufacturer.php">
+        <operation>
+            <search position="after"><![CDATA[function getForm() {]]>
+            </search>
+            <add><![CDATA[
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                */
+                $this->load->model('catalog/simonfilters');
+                $manufacturer_id = isset($this->request->get['manufacturer_id'])?$this->request->get['manufacturer_id']:0;
+                $this->data['simonseesme'] = $this->model_catalog_simonfilters->isSupportedFilter('m',$manufacturer_id)?1:null;
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code END
+                */
+                    ]]>
+            </add>
+        </operation>
+        <operation>
+            <search position="after"><![CDATA[$this->data['manufacturers'][] = array(]]>
+            </search>
+            <add><![CDATA[
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                */
+                'simonseesme'    => $result['simonseesme'],
+                'simonseesme_link' => $this->url->link('module/simonfilters/simonseesme', 'token=' . $this->session->data['token'] . '&manufacturer_id=' . $result['manufacturer_id'], 'SSL'),
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code END
+                */
+                    ]]>
+            </add>
+        </operation>
+
+    </file>
+
+    <file name="admin/view/template/catalog/manufacturer_form.tpl">
+        <operation>
+            <search position="after" offset="2"><![CDATA[<td><?php echo $entry_sort_order; ?></td>]]>
+            </search>
+            <add><![CDATA[
+                <!--
+                * simonfilters - 2.12.0 Build 0001 Code START
+                *-->
+                <tr>
+                    <td>Simon Filters sees this</td>
+                    <td><input type="checkbox" name="simonseesme" value="1" <?php if(isset($simonseesme)) echo "CHECKED"?> /></td>
+                </tr>
+                <!--
+                * simonfilters - 2.12.0 Build 0001 Code END
+                *-->
+                    ]]>
+            </add>
+        </operation>
+    </file>
+
+    <file name="admin/view/template/catalog/manufacturer_list.tpl">
+        <operation>
+            <search position="before"><![CDATA[<td class="right"><?php if ($sort == 'sort_order') { ?>]]>            </search>
+            <add><![CDATA[
+                <!--
+                * simonfilters - 2.12.0 Build 0001 Code START
+                *-->
+                <td class="right">SimonFilters</td>
+                <script>
+                $(function(){
+                    $("a.simonseesme").click(function(event){
+                       event.preventDefault();
+                       var $_this = $(this);
+                       data = {
+                            simonseesme : $_this.text().trim()=='Yes'?0:1
+                       };
+                       $.get($(this).attr("href"),data,function(data){
+                            $_this.text( $_this.text().trim()=='Yes'?'No':'Yes' );
+                       });
+                    });
+                });
+                </script>
+                <!--
+                * simonfilters - 2.12.0 Build 0001 Code END
+                *-->
+                    ]]>
+            </add>
+        </operation>
+        <operation>
+            <search position="after"><![CDATA[<td class="left"><?php echo $manufacturer['name']; ?></td>]]>
+            </search>
+            <add><![CDATA[
+                <!--
+                * simonfilters - 2.12.0 Build 0001 Code START
+                *-->
+                <td class="right">
+                <a href="<?php echo $manufacturer['simonseesme_link'];?>" class="simonseesme">
+                <?php echo $manufacturer['simonseesme']?'<font color="green">Yes</font>':'No'; ?>
+                </a>
+                </td>
+                <!--
+                * simonfilters - 2.12.0 Build 0001 Code END
+                *-->
+                    ]]>
+            </add>
+        </operation>
+    </file>
+
+    <!--
+    ####################################################################################################
+    #
+    # Changes to WishList
+    #
+    ####################################################################################################
+    -->
+    <file name="catalog/controller/account/wishlist.php">
+        <operation>
+            <search position="after" index="1"><![CDATA[$product_info = $this->model_catalog_product->getProduct($product_id);]]></search>
+            <add><![CDATA[
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                */
+                $this->load->model('catalog/simonfilters');
+
+                $product_data = array();
+                if(count($this->model_catalog_simonfilters->currentfilters)>0){
+                    $SimonAttributes = $this->model_catalog_simonfilters->getSimonAttributes();
+
+                    $simon_sql = "SELECT distinct p.product_id FROM ". DB_PREFIX ."product p LEFT JOIN " . DB_PREFIX . "product_special ps ON (p.product_id = ps.product_id) ";
+                    $simon_sql .= $SimonAttributes['options']." WHERE ". $SimonAttributes['default'];
+                    $simon_sql = preg_replace('/\ *AND\ *$/','',$simon_sql);
+
+                    $simon_rows = $this->db->query($simon_sql)->rows;
+
+
+                    foreach($simon_rows as $simon_row){
+                        $product_data[] = $simon_row['product_id'];
+                    }
+                }
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code END
+                */
+                ]]>
+            </add>
+        </operation>
+        <operation>
+            <search position="replace" index="1"><![CDATA[if ($product_info) { ]]></search>
+            <add><![CDATA[
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code START
+                */
+                $show_this_product = in_array($product_id, $product_data) || count($this->model_catalog_simonfilters->currentfilters)==0;
+                if ($product_info && $show_this_product) {
+                /*
+                * simonfilters - 2.12.0 Build 0001 Code END
+                */
+                    ]]>
+            </add>
+        </operation>
+    </file>
+
+    <!--
+    ####################################################################################################
+    #
+    # Needed by Shoppica 1.0 Please uncomment
+    #
+    ####################################################################################################
+    -->
+    <!--
+    <file name="catalog/controller/module/shoppica.php">
+        <operation error="skip">
+            <search position="replace"><![CDATA[return (bool) $this->getHeader('X-Requested-With') || $this->getHeader('x-requested-with') || (isset($_REQUEST['type']) && $_REQUEST['type'] == 'XMLHttpRequest');]]>
+            </search>
+            <add><![CDATA[return  $this->getHeader('X-Requested-With')=='SimonFilters'?(false):((bool)$this->getHeader('X-Requested-With') || $this->getHeader('x-requested-with') || (isset($_REQUEST['type']) && $_REQUEST['type'] == 'XMLHttpRequest'));]]>
+            </add>
+        </operation>
+    </file>
+    -->
+</modification>
