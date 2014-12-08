@@ -69,7 +69,7 @@ class ControllerProductCategory extends Controller {
 			$category_id = 0;
 		}
 		
-		$category_info = $this->model_catalog_category->getCategory($category_id);
+		$category_info = $this->model_catalog_category->getCategory($category_id);		
 
 		if ($category_info) {
 			if ($category_info['seo_title']) {

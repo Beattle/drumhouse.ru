@@ -94,7 +94,7 @@ class ControllerExportYml extends Controller {
 				$data['vendor'] = $product['manufacturer'];
 				$data['vendorCode'] = $product['model'];
 				$data['model'] = $product['name'];
-				$data['description'] = htmlspecialchars($product['description']);
+				$data['description'] = strip_tags($product['description']);
 //				$data['manufacturer_warranty'] = 'true';
 //				$data['barcode'] = $product['sku'];
 				if ($product['image']) {
@@ -619,7 +619,8 @@ class ControllerExportYml extends Controller {
 		if ($this->from_charset != 'windows-1251') {
 			$field = iconv($this->from_charset, 'windows-1251//IGNORE//TRANSLIT', $field);
 		}
-		$field = preg_replace('#[\x00-\x08\x0B-\x0C\x0E-\x1F]+#is', ' ', $field);
+		// $field = preg_replace('#[\x00-\x08\x0B-\x0C\x0E-\x1F]+#is', ' ', $field);
+        $field = substr($field,0,1000);
 
 		return trim($field);
 	}

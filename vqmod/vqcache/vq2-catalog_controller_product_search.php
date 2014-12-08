@@ -291,6 +291,14 @@ class ControllerProductSearch extends Controller {
                     $status_hit = 0;
                 }
 
+                if ($result['quantity'] <= 0) {
+                    $stock = $result['stock_status'];
+                } elseif ($this->config->get('config_stock_display')) {
+                    $stock = $result['quantity'];
+                } else {
+                    $stock = $this->language->get('text_instock');
+                }
+
 				$this->data['products'][] = array(
 					'product_id'  => $result['product_id'],
 					'thumb'       => $image,
@@ -304,7 +312,8 @@ class ControllerProductSearch extends Controller {
     				'status_hit'  => $status_hit,
     				'status_new'  => $status_new,
 					'reviews'     => sprintf($this->language->get('text_reviews'), (int)$result['reviews']),
-					'href'        => $this->url->link('product/product', $url . '&product_id=' . $result['product_id'])
+					'href'        => $this->url->link('product/product', $url . '&product_id=' . $result['product_id']),
+                    'stock'       => $stock
 				);
 			}
 					
@@ -536,5 +545,115 @@ class ControllerProductSearch extends Controller {
 				
 		$this->response->setOutput($this->render());
   	}
+
+    public function search_by_sku(){
+        $this->language->load('product/search');
+
+        if ($this->request->server['REQUEST_METHOD'] == 'POST' && !empty($_POST['sku'])){
+            $this->load->model('catalog/product');
+            $this->load->model('tool/image');
+
+            $result =  $this->model_catalog_product->getProduct_by_sku($_POST['sku']);
+            if($result) {
+                if ($result['image']) {
+                    $image = $this->model_tool_image->resize($result['image'], $this->config->get('config_image_product_width'), $this->config->get('config_image_product_height'));
+                } else {
+                    $image = false;
+                }
+
+                if (($this->config->get('config_customer_price') && $this->customer->isLogged()) || !$this->config->get('config_customer_price')) {
+                    $price = $this->currency->format($this->tax->calculate($result['price'], $result['tax_class_id'], $this->config->get('config_tax')));
+                } else {
+                    $price = false;
+                }
+
+                if ((float)$result['special']) {
+                    $special = $this->currency->format($this->tax->calculate($result['special'], $result['tax_class_id'], $this->config->get('config_tax')));
+                } else {
+                    $special = false;
+                }
+
+                if ($this->config->get('config_tax')) {
+                    $tax = $this->currency->format((float)$result['special'] ? $result['special'] : $result['price']);
+                } else {
+                    $tax = false;
+                }
+
+                if ($this->config->get('config_review_status')) {
+                    $rating = (int)$result['rating'];
+                } else {
+                    $rating = false;
+                }
+
+                $cut_descr_symbols = 120;
+                $descr_plaintext = strip_tags(html_entity_decode($result['short_description'], ENT_QUOTES, 'UTF-8'));
+                if( mb_strlen($descr_plaintext, 'UTF-8') > $cut_descr_symbols )
+                {
+                    $descr_plaintext = mb_substr($descr_plaintext, 0, $cut_descr_symbols, 'UTF-8') . '&nbsp;&hellip;';
+                }
+
+                $cut_descr_symbols = 50;
+                $name_plaintext    = $result['name'];
+                if( mb_strlen($name_plaintext, 'UTF-8') > $cut_descr_symbols )
+                {
+                    $name_plaintext = mb_substr($name_plaintext, 0, $cut_descr_symbols, 'UTF-8') . '&nbsp;&hellip;';
+                }
+
+                $sales_count = $result['sales_count'];
+                $status_hit = $result['status_hit'];
+                $status_new = $result['status_new'];
+
+                if ($sales_count >= (int)$this->config->get('config_hit_status_limit')) {
+                    $status_new = 0;
+                    $status_hit = 1;
+                }
+                if ($status_new) {
+                    $status_hit = 0;
+                }
+
+                if ($result['quantity'] <= 0) {
+                    $stock = $result['stock_status'];
+                } elseif ($this->config->get('config_stock_display')) {
+                    $stock = $result['quantity'];
+                } else {
+                    $stock = $this->language->get('text_instock');
+                }
+
+                $this->data['product'] = array(
+                    'product_id'  => $result['product_id'],
+                    'thumb'       => $image,
+                    'name'    	  => $name_plaintext,
+                    'title'    	  => $result['name'],
+                    'description' => $descr_plaintext,
+                    'price'       => $price,
+                    'special'     => $special,
+                    'tax'         => $tax,
+                    'rating'      => $result['rating'],
+                    'status_hit'  => $status_hit,
+                    'status_new'  => $status_new,
+                    'reviews'     => sprintf($this->language->get('text_reviews'), (int)$result['reviews']),
+                    'href'        => $this->url->link('product/product&product_id=' . $result['product_id']),
+                    'stock'       => $stock
+                );
+
+
+
+            } else {
+                $this->data['product'] = false;
+
+            }
+
+            if (file_exists(DIR_TEMPLATE . $this->config->get('config_template') . '/template/product/search_sku.tpl')) {
+                $this->template = $this->config->get('config_template') . '/template/product/search_sku.tpl';
+            } else {
+                $this->template = 'default/template/product/search_sku.tpl';
+            }
+
+            $this->response->setOutput($this->render());
+
+        }
+
+
+    }
 }
 ?>

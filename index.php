@@ -239,9 +239,6 @@ if (!$seo_type = $config->get('config_seo_url_type')) {
 }
 $controller->addPreAction(new Action('common/' . $seo_type));	
 	
-// SimonFilters
-$controller->addPreAction(new Action('module/simonfilters/checkvalidity'));
-
 // Router
 if (isset($request->get['route'])) {
 	$action = new Action($request->get['route']);
