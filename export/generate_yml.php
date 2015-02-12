@@ -3,7 +3,7 @@
 define('VERSION', '1.0.1');
 
 // Config
-require_once('/var/www/hipno/data/www/test.com/drum/config.php');
+require_once('/var/www/drumhouse/data/www/drumhouse.ru/config.php');
    
 // Startup
 require_once(DIR_SYSTEM . 'startup.php');

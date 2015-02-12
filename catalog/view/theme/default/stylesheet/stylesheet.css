@@ -1454,3 +1454,12 @@ table.list .desc {
     animation: blink5 1s linear infinite;
 } @-webkit-keyframes blink5 {
       0% { color: red; } 50% { color: #000000; } 100% { color: red; } } @keyframes blink5 { 0% { color: #000000; } 50% { color: rgb(183, 65, 14); } 100% { color: red; } }
+
+
+.add-comment_line input{
+    width: auto;
+}
+
+.add-code input{
+    width: auto;
+}

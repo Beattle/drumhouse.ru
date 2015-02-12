@@ -228,7 +228,7 @@ class ControllerCommonSeoPro extends Controller {
 		return $seo_url;
 	}
 
-	public function getPathByProduct($product_id) {
+	private function getPathByProduct($product_id) {
 		$product_id = (int)$product_id;
 		if ($product_id < 1) return false;
 

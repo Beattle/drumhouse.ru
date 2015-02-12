@@ -71,7 +71,7 @@ class ControllerExportYml extends Controller {
 			$vendor_required = false; // true - только товары у которых задан производитель, необходимо для 'vendor.model' 
 			$products = $this->model_export_yandex_market->getProduct($allowed_categories, $out_of_stock_id, $vendor_required);
 
-			foreach ($products as $product) {
+			foreach ($products as &$product) {
 				$data = array();
 
 				// Атрибуты товарного предложения
@@ -84,7 +84,7 @@ class ControllerExportYml extends Controller {
 //				$data['cbid'] = 15;
 
 				// Параметры товарного предложения
-				$data['url'] = $this->url->link('product/product', 'path=' . $this->getPath($product['category_id']) . '&product_id=' . $product['product_id']);
+				$data['url'] = $this->url->link('product/product', 'path=' . $this->getPath($product['category_id']) . '&product_id=' . $product['product_id']).'?utm_source=yamarket&amp;utm_medium=cpc&amp;utm_term='.$product['product_id'];
 				$data['price'] = number_format($this->currency->convert($this->tax->calculate($product['price'], $product['tax_class_id']), $shop_currency, $offers_currency), $decimal_place, '.', '');
 				$data['currencyId'] = $offers_currency;
 				$data['categoryId'] = $product['category_id'];
@@ -94,7 +94,9 @@ class ControllerExportYml extends Controller {
 				$data['vendor'] = $product['manufacturer'];
 				$data['vendorCode'] = $product['model'];
 				$data['model'] = $product['name'];
-				$data['description'] = strip_tags($product['description']);
+				$descr = strip_tags($product['description']);
+				$descr = mb_substr($product['description'],0, 1000).'..';				 
+				$data['description'] = $descr;
 //				$data['manufacturer_warranty'] = 'true';
 //				$data['barcode'] = $product['sku'];
 				if ($product['image']) {
@@ -619,11 +621,125 @@ class ControllerExportYml extends Controller {
 		if ($this->from_charset != 'windows-1251') {
 			$field = iconv($this->from_charset, 'windows-1251//IGNORE//TRANSLIT', $field);
 		}
-		// $field = preg_replace('#[\x00-\x08\x0B-\x0C\x0E-\x1F]+#is', ' ', $field);
-        $field = substr($field,0,1000);
+		 $field = preg_replace('#[\x00-\x08\x0B-\x0C\x0E-\x1F]+#is', ' ', $field);
+
 
 		return trim($field);
 	}
+
+    private  function getPathByProduct($product_id) {
+        $product_id = (int)$product_id;
+        if ($product_id < 1) return false;
+
+        static $path = null;
+        if (!is_array($path)) {
+            $path = $this->cache->get('product.seopath');
+            if (!is_array($path)) $path = array();
+        }
+
+        if (!isset($path[$product_id])) {
+            $query = $this->db->query("SELECT category_id FROM " . DB_PREFIX . "product_to_category WHERE product_id = '" . $product_id . "' ORDER BY main_category DESC LIMIT 1");
+
+            $path[$product_id] = $this->getPathByCategory($query->num_rows ? (int)$query->row['category_id'] : 0);
+
+            $this->cache->set('product.seopath', $path);
+        }
+
+        return $path[$product_id];
+    }
+
+    private function  getSeoUrl ($product_id,$category_id){
+        $seo_url = '';
+        $data = array();
+        $data['path'] = $this->getPathByProduct($product_id);
+        $data['product_id'] = $product_id;
+        foreach ($data as $key => $value) {
+            switch ($key) {
+				case 'product_id':
+                    $queries[] = $key . '=' . $value;
+                    unset($data[$key]);
+                    $postfix = 1;
+                 break;
+                case 'path':
+                    $categories = explode('_', $value);
+                    foreach ($categories as $category) {
+                        $queries[] = 'category_id=' . $category;
+                    }
+                    unset($data[$key]);
+            }
+        }
+
+        if (!empty($queries)) {
+
+            $query_in = array_map(array($this->db, 'escape'), $queries);
+
+            $query = $this->db->query("SELECT * FROM " . DB_PREFIX . "url_alias WHERE `query` IN ('" . implode("', '", $query_in) . "')");
+
+            if ($query->num_rows == count($queries)) {
+                $aliases = array();
+                foreach ($query->rows as $row) {
+                    $aliases[$row['query']] = $row['keyword'];
+                }
+                foreach ($queries as $query) {
+                    $seo_url .= '/' . rawurlencode($aliases[$query]);
+                }
+            }
+
+        }
+
+        if ($seo_url == '') return $this->url->link('product/product', 'path=' . $this->getPath($category_id) . '&product_id=' . $product_id);
+
+        $seo_url = trim($seo_url, '/');
+        $seo_url = HTTP_SERVER . $seo_url;
+
+        if (isset($postfix)) {
+            $seo_url .= trim($this->config->get('config_seo_url_postfix'));
+        } else {
+            $seo_url .= '/';
+        }
+
+
+        if (count($data)) {
+            $seo_url .= '?' . urldecode(http_build_query($data));
+        }
+
+
+
+        return $seo_url;
+    }
+
+    private function getPathByCategory($category_id) {
+        $category_id = (int)$category_id;
+        if ($category_id < 1) return false;
+
+        static $path = null;
+        if (!is_array($path)) {
+            $path = $this->cache->get('category.seopath');
+            if (!is_array($path)) $path = array();
+        }
+
+        if (!isset($path[$category_id])) {
+            $max_level = 10;
+
+            $sql = "SELECT CONCAT_WS('_'";
+            for ($i = $max_level-1; $i >= 0; --$i) {
+                $sql .= ",t$i.category_id";
+            }
+            $sql .= ") AS path FROM " . DB_PREFIX . "category t0";
+            for ($i = 1; $i < $max_level; ++$i) {
+                $sql .= " LEFT JOIN " . DB_PREFIX . "category t$i ON (t$i.category_id = t" . ($i-1) . ".parent_id)";
+            }
+            $sql .= " WHERE t0.category_id = '" . $category_id . "'";
+
+            $query = $this->db->query($sql);
+
+            $path[$category_id] = $query->num_rows ? $query->row['path'] : false;
+
+            $this->cache->set('category.seopath', $path);
+        }
+
+        return $path[$category_id];
+    }
 
 	protected function getPath($category_id, $current_path = '') {
 		if (isset($this->categories[$category_id])) {
