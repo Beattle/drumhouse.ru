@@ -21,11 +21,11 @@ define('DIR_DOWNLOAD', '/var/www/hipno/data/www/test.com/drum/download/');
 define('DIR_LOGS', '/var/www/hipno/data/www/test.com/drum/system/logs/');
 
 // DB
-define('DB_DRIVER', 'mysql_cached');
+define('DB_DRIVER', 'mysql');
 define('DB_HOSTNAME', 'localhost');
 define('DB_USERNAME', 'root');
 define('DB_PASSWORD', 'd1i5m4bi');
 define('DB_DATABASE', 'drum');
 define('DB_PREFIX', 'oc_');
-define('DB_CACHED_EXPIRE', 120);
+
 ?>

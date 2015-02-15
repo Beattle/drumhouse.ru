@@ -6,7 +6,7 @@
  * YML основан на стандарте XML (Extensible Markup Language)
  * описание формата YML http://partner.market.yandex.ru/legal/tt/
  */
-class ControllerExportYml extends Controller {
+class ControllerExportYml2 extends Controller {
 	private $shop = array();
 	private $currencies = array();
 	private $categories = array();
@@ -90,7 +90,7 @@ class ControllerExportYml extends Controller {
 //				$data['cbid'] = 15;
 
 				// Параметры товарного предложения
-				$data['url'] = $this->getSeoUrl($product['product_id'],$product['category_id']).'?utm_source=yamarket&amp;utm_medium=cpc&amp;utm_term='.$product['product_id'];
+				$data['url'] = $this->getSeoUrl($product['product_id'],$product['category_id']);
 				$data['price'] = number_format($this->currency->convert($this->tax->calculate($product['price'], $product['tax_class_id']), $shop_currency, $offers_currency), $decimal_place, '.', '');
 				$data['currencyId'] = $offers_currency;
 				$data['categoryId'] = $product['category_id'];
@@ -130,7 +130,7 @@ class ControllerExportYml extends Controller {
 			$this->categories = array_filter($this->categories, array($this, "filterCategory"));
 
 
-			$this->writeYml(DIR_DOWNLOAD.'yandex_yml.xml');
+			$this->writeYml(DIR_DOWNLOAD.'yml2.xml');
 		}
 	}
 	

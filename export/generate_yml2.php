@@ -130,8 +130,8 @@ $registry->set('length', new Length($registry));
 // Cart
 $registry->set('cart', new Cart($registry));
 		
-require_once(DIR_APPLICATION . 'controller/export/yml.php');
+require_once(DIR_APPLICATION . 'controller/export/yml2.php');
 
-$controller = new ControllerExportYml($registry);
+$controller = new ControllerExportYml2($registry);
 $controller->generate();
 ?>
